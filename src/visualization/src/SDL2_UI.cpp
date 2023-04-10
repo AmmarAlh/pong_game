@@ -4,7 +4,7 @@
  */
 #include <string>
 #include <iostream>
-#include "/home/ram-user/ros2_ws/src/visualization_pkg/include/SDL2_UI.hpp"
+#include "visualization/SDL2_UI.hpp"
 
 
 SDL2_UI::SDL2_UI(std::string title, int sizeX, int sizeY, int fontSize): 

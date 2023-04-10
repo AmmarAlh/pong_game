@@ -1,14 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from advanced_user_interface/msg/Point2.msg
-// generated code does not contain a copyright notice
-
-
-module advanced_user_interface {
-  module msg {
-    struct Point2 {
-      double x;
-
-      double y;
-    };
-  };
-};
+/home/ram-user/pong_ws/build/advanced_user_interface/rosidl_adapter/advanced_user_interface/msg/Point2.idl

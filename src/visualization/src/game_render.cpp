@@ -1,14 +1,14 @@
 #include <SDL2/SDL.h>
 #include "rclcpp/rclcpp.hpp"
-#include "/home/ram-user/ros2_ws/src/visualization_pkg/include/Pong_field.hpp"
-#include "/home/ram-user/ros2_ws/src/visualization_pkg/include/SDL2_UI.hpp"
+#include "visualization/Pong_field.hpp"
+#include "visualization/SDL2_UI.hpp"
 
 
-class Visualization : public rclcpp::Node
+class GameRender : public rclcpp::Node
 {
 public:
-  Visualization()
-  : Node("Visualization")
+  GameRender()
+  : Node("GameRender")
   {
         Pong_field field;
     

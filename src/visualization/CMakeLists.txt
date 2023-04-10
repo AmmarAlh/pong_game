@@ -1,35 +1,62 @@
 cmake_minimum_required(VERSION 3.8)
-project(visualization_pkg)
+project(visualization)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+
+include_directories(include)
+
+# Find dependencies
+set(DEPENDENCIES
+  "ament_cmake"
+  "rclcpp"
+  "rclcpp_components"
+  "sensor_msgs"
+  "std_msgs"
+)
 find_package(SDL2 REQUIRED)
 string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)
-set(SDL2_TTF_LIBRARIES SDL2_ttf) # Officially this should be done with find_package, but due to a bug that does not work
+set(SDL2_TTF_LIBRARIES SDL2_ttf) 
 
 
-add_executable(visualization_node src/visualization_node.cpp src/Pong_field.cpp src/SDL2_UI.cpp)
- ament_target_dependencies(visualization_node rclcpp std_msgs)
+# Find all packages
+foreach(dep IN LISTS DEPENDENCIES)
+  find_package(${dep} REQUIRED)
+endforeach()
 
-# Include the SDL libraries (as found above) for this executable
-target_link_directories(visualization_node PUBLIC ${SDL2_LINK_DIRS})
-target_include_directories(visualization_node PUBLIC ${SDL2_INCLUDE_DIRS})
-target_link_libraries(visualization_node ${SDL2_LIBRARIES} ${SDL2_TTF_LIBRARIES})
+# Function to add executables and their dependencies
+function(custom_executable target)
 
-target_include_directories(visualization_node PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
-target_compile_features(visualization_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+  file(GLOB_RECURSE sources "src/*.cpp")
 
-install(TARGETS 
-  visualization_node 
+  add_executable(${target} src/${target}_node.cpp  ${sources})
+  # Add ament dependencies
+  foreach(dep IN LISTS DEPENDENCIES)
+    ament_target_dependencies(${target} ${dep})
+  endforeach()
+ 
+
+  install(TARGETS ${target}
   DESTINATION lib/${PROJECT_NAME})
+
+  target_include_directories(${target} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include> ${SDL2_LIBRARIES} ${SDL2_TTF_LIBRARIES})
+
+  target_link_libraries(${target} ${SDL2_LIBRARIES} ${SDL2_TTF_LIBRARIES})
+
+  target_compile_features(${target} PUBLIC cxx_std_14)  # Require C99 and C++17
+endfunction()
+
+
+
+custom_executable(game_render)
+
+
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -42,7 +69,5 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
-
 
 ament_package()

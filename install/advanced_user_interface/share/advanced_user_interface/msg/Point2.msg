@@ -1,2 +1,1 @@
-float64 x
-float64 y
+/home/ram-user/pong_ws/src/advanced_user_interface/msg/Point2.msg

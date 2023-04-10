@@ -1,5 +1,0 @@
-source;share/visualization_pkg/local_setup.bash
-source;share/visualization_pkg/local_setup.dsv
-source;share/visualization_pkg/local_setup.ps1
-source;share/visualization_pkg/local_setup.sh
-source;share/visualization_pkg/local_setup.zsh

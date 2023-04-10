@@ -1,0 +1,156 @@
+[0.073s] Invoking command in '/home/ram-user/pong_ws/build/advanced_user_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ram-user/pong_ws/build/advanced_user_interface -- -j2 -l2
+[0.233s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_generator_c[0m
+[0.301s] [  2%] Built target advanced_user_interface__cpp
+[0.301s] [ 11%] Built target advanced_user_interface__rosidl_generator_c
+[0.349s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_cpp[0m
+[0.408s] [ 11%] Built target ament_cmake_python_copy_advanced_user_interface
+[0.418s] [ 20%] Built target advanced_user_interface__rosidl_typesupport_cpp
+[0.477s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_fastrtps_cpp[0m
+[0.487s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_fastrtps_c[0m
+[0.531s] [ 29%] Built target advanced_user_interface__rosidl_typesupport_fastrtps_c
+[0.560s] [ 38%] Built target advanced_user_interface__rosidl_typesupport_fastrtps_cpp
+[0.614s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_c[0m
+[0.624s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_introspection_c[0m
+[0.694s] [ 47%] Built target advanced_user_interface__rosidl_typesupport_introspection_c
+[0.705s] [ 55%] Built target advanced_user_interface__rosidl_typesupport_c
+[0.780s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_introspection_cpp[0m
+[0.812s] [ 64%] Built target advanced_user_interface__rosidl_typesupport_introspection_cpp
+[0.905s] [35m[1mConsolidate compiler generated dependencies of target light_position_detection[0m
+[1.031s] [ 73%] Built target light_position_detection
+[1.104s] [ 73%] Built target advanced_user_interface
+[1.229s] [ 76%] Built target advanced_user_interface__py
+[1.282s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_generator_py[0m
+[1.388s] [ 82%] Built target advanced_user_interface__rosidl_generator_py
+[1.463s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.563s] [ 88%] Built target advanced_user_interface__rosidl_typesupport_fastrtps_c__pyext
+[1.669s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_introspection_c__pyext[0m
+[1.735s] [ 94%] Built target advanced_user_interface__rosidl_typesupport_introspection_c__pyext
+[1.773s] [35m[1mConsolidate compiler generated dependencies of target advanced_user_interface__rosidl_typesupport_c__pyext[0m
+[1.832s] [100%] Built target advanced_user_interface__rosidl_typesupport_c__pyext
+[2.326s] running egg_info
+[2.333s] writing advanced_user_interface.egg-info/PKG-INFO
+[2.333s] writing dependency_links to advanced_user_interface.egg-info/dependency_links.txt
+[2.333s] writing top-level names to advanced_user_interface.egg-info/top_level.txt
+[2.342s] reading manifest file 'advanced_user_interface.egg-info/SOURCES.txt'
+[2.342s] writing manifest file 'advanced_user_interface.egg-info/SOURCES.txt'
+[2.418s] [100%] Built target ament_cmake_python_build_advanced_user_interface_egg
+[2.466s] Invoked command in '/home/ram-user/pong_ws/build/advanced_user_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ram-user/pong_ws/build/advanced_user_interface -- -j2 -l2
+[2.815s] Invoking command in '/home/ram-user/pong_ws/build/advanced_user_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ram-user/pong_ws/build/advanced_user_interface
+[2.877s] -- Install configuration: ""
+[2.878s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/ament_index/resource_index/rosidl_interfaces/advanced_user_interface
+[2.878s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface
+[2.878s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg
+[2.879s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail
+[2.879s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__functions.c
+[2.880s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__struct.h
+[2.880s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__functions.h
+[2.880s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__type_support.h
+[2.883s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/rosidl_generator_c__visibility_control.h
+[2.884s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/point2.h
+[2.884s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/library_path.sh
+[2.884s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/library_path.dsv
+[2.884s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_generator_c.so
+[2.884s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface
+[2.885s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg
+[2.885s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.885s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail
+[2.885s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__rosidl_typesupport_fastrtps_c.h
+[2.885s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_typesupport_fastrtps_c.so
+[2.885s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface
+[2.889s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg
+[2.890s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/point2.hpp
+[2.907s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail
+[2.907s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__traits.hpp
+[2.907s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__builder.hpp
+[2.908s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__struct.hpp
+[2.908s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface
+[2.908s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg
+[2.908s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail
+[2.908s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__rosidl_typesupport_fastrtps_cpp.hpp
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/dds_fastrtps
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_typesupport_fastrtps_cpp.so
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.909s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__rosidl_typesupport_introspection_c.h
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__type_support.c
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_typesupport_introspection_c.so
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_typesupport_c.so
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg
+[2.910s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail
+[2.911s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__rosidl_typesupport_introspection_cpp.hpp
+[2.911s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/include/advanced_user_interface/advanced_user_interface/msg/detail/point2__type_support.cpp
+[2.911s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_typesupport_introspection_cpp.so
+[2.911s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_typesupport_cpp.so
+[2.911s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/pythonpath.sh
+[2.911s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/pythonpath.dsv
+[2.912s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface-0.0.1-py3.10.egg-info
+[2.912s] -- Installing: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface-0.0.1-py3.10.egg-info/dependency_links.txt
+[2.912s] -- Installing: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface-0.0.1-py3.10.egg-info/top_level.txt
+[2.926s] -- Installing: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface-0.0.1-py3.10.egg-info/PKG-INFO
+[2.926s] -- Installing: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface-0.0.1-py3.10.egg-info/SOURCES.txt
+[2.926s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface
+[2.926s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/__init__.py
+[2.927s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/_advanced_user_interface_s.ep.rosidl_typesupport_introspection_c.c
+[2.927s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/libadvanced_user_interface__rosidl_generator_py.so
+[2.927s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/advanced_user_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.927s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/_advanced_user_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.927s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/advanced_user_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.927s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/msg
+[2.928s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/msg/__init__.py
+[2.928s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/msg/_point2.py
+[2.928s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/msg/_point2_s.c
+[2.933s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/_advanced_user_interface_s.ep.rosidl_typesupport_c.c
+[2.933s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/advanced_user_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.032s] Listing '/home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface'...
+[3.032s] Listing '/home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/msg'...
+[3.044s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/advanced_user_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.045s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/advanced_user_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.045s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/local/lib/python3.10/dist-packages/advanced_user_interface/advanced_user_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.049s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/libadvanced_user_interface__rosidl_generator_py.so
+[3.049s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/msg/Point2.idl
+[3.049s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/msg/Point2.msg
+[3.050s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/lib/advanced_user_interface/light_position_detection
+[3.050s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/ament_index/resource_index/package_run_dependencies/advanced_user_interface
+[3.051s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/ament_index/resource_index/parent_prefix_path/advanced_user_interface
+[3.051s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/ament_prefix_path.sh
+[3.051s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/ament_prefix_path.dsv
+[3.051s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/path.sh
+[3.052s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/environment/path.dsv
+[3.052s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/local_setup.bash
+[3.052s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/local_setup.sh
+[3.052s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/local_setup.zsh
+[3.056s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/local_setup.dsv
+[3.057s] -- Installing: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/package.dsv
+[3.059s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/ament_index/resource_index/packages/advanced_user_interface
+[3.065s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_generator_cExport.cmake
+[3.065s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_generator_cExport-noconfig.cmake
+[3.065s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[3.065s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.065s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_generator_cppExport.cmake
+[3.065s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.066s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.066s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_introspection_cExport.cmake
+[3.066s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.068s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_cExport.cmake
+[3.068s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_cExport-noconfig.cmake
+[3.069s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_introspection_cppExport.cmake
+[3.069s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.069s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_cppExport.cmake
+[3.070s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[3.070s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_generator_pyExport.cmake
+[3.070s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/export_advanced_user_interface__rosidl_generator_pyExport-noconfig.cmake
+[3.070s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.070s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/rosidl_cmake-extras.cmake
+[3.070s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/ament_cmake_export_targets-extras.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interfaceConfig.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/cmake/advanced_user_interfaceConfig-version.cmake
+[3.071s] -- Up-to-date: /home/ram-user/pong_ws/install/advanced_user_interface/share/advanced_user_interface/package.xml
+[3.090s] Invoked command in '/home/ram-user/pong_ws/build/advanced_user_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ram-user/pong_ws/build/advanced_user_interface

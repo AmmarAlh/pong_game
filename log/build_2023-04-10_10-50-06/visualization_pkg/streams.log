@@ -1,0 +1,60 @@
+[0.042s] Invoking command in '/home/ram-user/pong_ws/build/visualization_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ram-user/pong_ws/src/visualization -DCMAKE_INSTALL_PREFIX=/home/ram-user/pong_ws/install/visualization_pkg
+[0.296s] -- The C compiler identification is GNU 11.3.0
+[0.607s] -- The CXX compiler identification is GNU 11.3.0
+[0.651s] -- Detecting C compiler ABI info
+[1.135s] -- Detecting C compiler ABI info - done
+[1.214s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.215s] -- Detecting C compile features
+[1.215s] -- Detecting C compile features - done
+[1.264s] -- Detecting CXX compiler ABI info
+[1.571s] -- Detecting CXX compiler ABI info - done
+[1.601s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.602s] -- Detecting CXX compile features
+[1.604s] -- Detecting CXX compile features - done
+[1.624s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.435s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[2.752s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[3.028s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.094s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.137s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.212s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.321s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.670s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.678s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.908s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.973s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.072s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.098s] -- Looking for pthread.h
+[4.242s] -- Looking for pthread.h - found
+[4.242s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.395s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.395s] -- Found Threads: TRUE  
+[5.010s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.214s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.215s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ram-user/pong_ws/src/visualization/include>
+[5.215s] -- Configured cppcheck exclude dirs and/or files: 
+[5.231s] -- Added test 'lint_cmake' to check CMake code style
+[5.238s] -- Added test 'uncrustify' to check C / C++ code style
+[5.238s] -- Configured uncrustify additional arguments: 
+[5.241s] -- Added test 'xmllint' to check XML markup files
+[5.247s] -- Configuring done
+[5.271s] -- Generating done
+[5.274s] -- Build files have been written to: /home/ram-user/pong_ws/build/visualization_pkg
+[5.293s] Invoked command in '/home/ram-user/pong_ws/build/visualization_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ram-user/pong_ws/src/visualization -DCMAKE_INSTALL_PREFIX=/home/ram-user/pong_ws/install/visualization_pkg
+[5.293s] Invoking command in '/home/ram-user/pong_ws/build/visualization_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ram-user/pong_ws/build/visualization_pkg -- -j2 -l2
+[5.416s] [ 25%] [32mBuilding CXX object CMakeFiles/visualization_node.dir/src/visualization_node.cpp.o[0m
+[5.424s] [ 50%] [32mBuilding CXX object CMakeFiles/visualization_node.dir/src/Pong_field.cpp.o[0m
+[5.777s] [01m[K/home/ram-user/pong_ws/src/visualization/src/Pong_field.cpp:3:10:[m[K [01;31m[Kfatal error: [m[K/home/ram-user/ros2_ws/src/visualization_pkg/include/Pong_field.hpp: No such file or directory
+[5.777s]     3 | #include [01;31m[K"/home/ram-user/ros2_ws/src/visualization_pkg/include/Pong_field.hpp"[m[K
+[5.777s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.777s] compilation terminated.
+[5.781s] gmake[2]: *** [CMakeFiles/visualization_node.dir/build.make:90: CMakeFiles/visualization_node.dir/src/Pong_field.cpp.o] Error 1
+[5.781s] gmake[2]: *** Waiting for unfinished jobs....
+[6.496s] [01m[K/home/ram-user/pong_ws/src/visualization/src/visualization_node.cpp:7:10:[m[K [01;31m[Kfatal error: [m[K/home/ram-user/ros2_ws/src/visualization_pkg/include/Pong_field.hpp: No such file or directory
+[6.496s]     7 | #include [01;31m[K"/home/ram-user/ros2_ws/src/visualization_pkg/include/Pong_field.hpp"[m[K
+[6.496s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.496s] compilation terminated.
+[6.502s] gmake[2]: *** [CMakeFiles/visualization_node.dir/build.make:76: CMakeFiles/visualization_node.dir/src/visualization_node.cpp.o] Error 1
+[6.502s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/visualization_node.dir/all] Error 2
+[6.502s] gmake: *** [Makefile:146: all] Error 2
+[6.503s] Invoked command in '/home/ram-user/pong_ws/build/visualization_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ram-user/pong_ws/build/visualization_pkg -- -j2 -l2

@@ -114,8 +114,8 @@ void LightPositionDetection::callbackLPD(const sensor_msgs::msg::Image &msg)
   // processes the input image by converting it to grayscale, applying a region of interest,
   // Gaussian blur, and thresholding, and returns the processed image as an output parameter.
   // Convert the image to grayscale in-place
-  cv::cvtColor(cv_ptr->image, processed_img, cv::COLOR_BGR2GRAY);
-  applyRegionOfInterest(processed_img, processed_img, roi_origin_, roi_size_);
+  applyRegionOfInterest(cv_ptr->image, processed_img, roi_origin_, roi_size_);
+  cv::cvtColor(processed_img, processed_img, cv::COLOR_BGR2GRAY);
   cv::GaussianBlur(processed_img, processed_img, cv::Size(15, 15), 0);
   cv::inRange(processed_img, brightness_threshold_, 255, processed_img);
 

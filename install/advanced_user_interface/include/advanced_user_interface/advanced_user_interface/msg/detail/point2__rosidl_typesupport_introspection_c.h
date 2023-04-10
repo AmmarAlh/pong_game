@@ -1,1 +1,0 @@
-/home/ram-user/pong_ws/build/advanced_user_interface/rosidl_typesupport_introspection_c/advanced_user_interface/msg/detail/point2__rosidl_typesupport_introspection_c.h

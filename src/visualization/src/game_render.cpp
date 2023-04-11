@@ -1,61 +1,47 @@
-#include <SDL2/SDL.h>
-#include "rclcpp/rclcpp.hpp"
-#include "visualization/Pong_field.hpp"
-#include "visualization/SDL2_UI.hpp"
+//==============================================================
+// Filename : game_render.cpp
+// Authors : Ammar Alhannafi & Michiel van Geene
+// Group : 33
+// License : N.A.
+// Description : Implementation file for GameRender class.
+//   This class provides game rendering using SDL2.
+//   It uses the ROS2 framework for communication and includes
+//   message and parameter handling functions.
+//==============================================================
+#include "visualization/game_render.hpp"
 
-
-class GameRender : public rclcpp::Node
+GameRender::GameRender()
+    : Node("GameRender")
 {
-public:
-  GameRender()
-  : Node("GameRender")
-  {
-        Pong_field field;
-    
-    int frameCounter = 0;
-    bool quit = false;
+    subscription_ = this->create_subscription<game_msgs::msg::GameState>(
+        "game_state", 10, std::bind(&GameRender::gameStateCallback, this, std::placeholders::_1));
+}
 
-    while (!quit) {
-        frameCounter++;
-        //if (frameCounter>=1000){
-        //    frameCounter = 0;
-        //}
+void GameRender::run()
+{
+    rclcpp::Rate rate(30); // 30 Hz refresh rate
 
-        // Update the positions of the objects
-        field.setYBatLeft(frameCounter);
-        field.setYBatRight(100-frameCounter);
-        field.setXYBall(frameCounter,frameCounter/2);
-
-        // Update the text
-        if (frameCounter%100==0) {
-            // No need to set the values each time you call DrawField
-            if (frameCounter==800) {
-                // Any text
-                //field.setFieldText(std::string("Game Over"));     //Game over screen after 800 frames
-            } else if (frameCounter==900)
-            {
-                // Show no text
-                //field.setFieldText(std::string(""));              //Flicker at 900 frames (100 frames after Game over screen)
-            } else {
-                // Show score
-                //field.setFieldText(std::to_string(frameCounter/100)+ std::string(" - 0"));  //Counter for score
-                field.setFieldText(std::string("0 - 0"));
-            }
-        }
-
-        // Show it on the screen
+    while (rclcpp::ok())
+    {
         field.DrawField();
 
-        // We regularly need to let SDL process windows events such as mouse presses and keyboard presses
-        // (even if they are not used; there are also windows events 'under water' that *are* used).
-        // The function .processEvents() that does that also tells us if the user has pressed the quit button.
-        bool wantsToQuit;
-        wantsToQuit = field.sdl2_ui.processEvents();
+        bool wantsToQuit = field.sdl2_ui.processEvents();
         if (wantsToQuit)
         {
-            quit = true;
+            RCLCPP_INFO(this->get_logger(), "User requested to quit the application.");
+            break;
         }
-    }
 
-  }
-};
+        rclcpp::spin_some(shared_from_this());
+        rate.sleep();
+    }
+}
+
+void GameRender::gameStateCallback(const game_msgs::msg::GameState::SharedPtr msg)
+{
+    field.setFieldText(std::to_string(msg->score_left) + " - " + std::to_string(msg->score_right));
+    field.setXYBall(msg->ball_pos_x, msg->ball_pos_y);
+    field.setYBatLeft(msg->bat_left_pos_y);
+    field.setYBatRight(msg->bat_right_pos_y);
+}
+

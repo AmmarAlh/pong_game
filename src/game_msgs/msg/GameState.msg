@@ -1,0 +1,6 @@
+int32 score_left
+int32 score_right
+float64 ball_pos_x
+float64 ball_pos_y
+float64 bat_left_pos_y
+float64 bat_right_pos_y

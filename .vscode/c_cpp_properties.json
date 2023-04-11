@@ -1,24 +1,25 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "${default}",
-        "limitSymbolsToIncludedHeaders": false
-      },
-      "includePath": [
-        "/home/ram-user/pong_ws/install/advanced_user_interface/include/**",
-        "/home/ram-user/pong_ws/install/rtsd_interfaces/include/**",
-        "/opt/ros/humble/include/**",
-        "/home/ram-user/pong_ws/src/advanced_user_interface/include/**",
-        "/usr/include/**",
-        "${workspaceFolder}/**"
-      ],
-      "name": "ROS",
-      "intelliSenseMode": "gcc-x64",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
-      "cppStandard": "c++14"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "${workspaceFolder}/install/advanced_user_interface/include/**",
+                "${workspaceFolder}/install/rtsd_interfaces/include/**",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/advanced_user_interface/include/**",
+                "/opt/ros/humble/include/**",
+                "/home/ram-user/pong_ws/src/advanced_user_interface/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
 }

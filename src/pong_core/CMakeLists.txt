@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(visualization)
+project(pong_core)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -15,12 +15,8 @@ set(DEPENDENCIES
   "rclcpp_components"
   "sensor_msgs"
   "std_msgs"
-  "game_msgs"
+  "rosidl_default_generators"
 )
-find_package(SDL2 REQUIRED)
-string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)
-set(SDL2_TTF_LIBRARIES SDL2_ttf) 
-
 
 # Find all packages
 foreach(dep IN LISTS DEPENDENCIES)
@@ -29,7 +25,6 @@ endforeach()
 
 # Function to add executables and their dependencies
 function(custom_executable target)
-
   set(options)
   set(oneValueArgs)
   set(multiValueArgs SOURCES)
@@ -37,33 +32,40 @@ function(custom_executable target)
   cmake_parse_arguments(ARG "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
   add_executable(${target} src/${target}_node.cpp ${ARG_SOURCES})
+
+  
   # Add ament dependencies
   foreach(dep IN LISTS DEPENDENCIES)
     ament_target_dependencies(${target} ${dep})
   endforeach()
- 
+  
+  rosidl_get_typesupport_target(${target}_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp") 
+  target_link_libraries(${target} ${${target}_typesupport_target})
 
   install(TARGETS ${target}
   DESTINATION lib/${PROJECT_NAME})
 
   target_include_directories(${target} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include> ${SDL2_LIBRARIES} ${SDL2_TTF_LIBRARIES})
-
-  target_link_libraries(${target} ${SDL2_LIBRARIES} ${SDL2_TTF_LIBRARIES})
+  $<INSTALL_INTERFACE:include>)
 
   target_compile_features(${target} PUBLIC cxx_std_14)  # Require C99 and C++17
 endfunction()
 
-
-
-custom_executable(game_render SOURCES
-  src/game_render.cpp 
-  src/Pong_field.cpp 
-  src/SDL2_UI.cpp 
-
+ament_export_dependencies(rosidl_default_runtime)
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/BallState.msg"
+  "msg/BatsState.msg"
+  DEPENDENCIES builtin_interfaces
 )
-custom_executable(game_state_publisher)
+
+
+custom_executable(game_controller SOURCES
+  src/game_controller.cpp
+  src/trajectory.cpp
+  src/collision_detection.cpp
+)
+
 
 
 

@@ -24,7 +24,7 @@ private:
     // Simulate game state updates with random data
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> pos_dist(0, 100);
+    std::uniform_int_distribution<> pos_dist(-50, 50);
     std::uniform_int_distribution<> score_dist(0, 10);
 
     msg->bat_left_pos_y = pos_dist(gen);

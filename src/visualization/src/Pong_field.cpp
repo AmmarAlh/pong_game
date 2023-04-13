@@ -52,18 +52,18 @@ void Pong_field::DrawField() {
 
     // Ball
     sdl2_ui.setDrawColor(255,255,255, 255); // Ball is white
-    int ballCenterX = (int) screenWidth/2;  // left/right - quickness - starting location of the ball
-    int ballCenterY = (int) screenHeight/2;
+    int ballCenterX = (int) ((xBall))+screenWidth/2;  // left/right - quickness - starting location of the ball
+    int ballCenterY = (int) ((yBall))+screenHeight/2;
     sdl2_ui.drawRectangle(ballCenterX-ballSize/2, ballCenterY-ballSize/2, ballCenterX+ballSize/2, ballCenterY+ballSize/2);
 
     // Left bat
     sdl2_ui.setDrawColor(64,64,255, 255); // Left bat is bLue
-    batCenter = (int) screenHeight/2;  // up down - quickness - starting location of the bat
+    batCenter = (int) ((yBatLeft))+screenHeight/2;  // up down - quickness - starting location of the bat
     sdl2_ui.drawRectangle(0, batCenter-batHeight/2, batWidth,  batCenter+batHeight/2);
     
     // Right bat
     sdl2_ui.setDrawColor(255,64,64, 255); // Right bat is Red
-    batCenter = (int) screenHeight/2;  // up down - quickness - starting location of the bat
+    batCenter = (int) ((yBatRight))+screenHeight/2;  // up down - quickness - starting location of the bat
     sdl2_ui.drawRectangle(screenWidth-1-batWidth, batCenter-batHeight/2, screenWidth-1,  batCenter+batHeight/2);
     
     

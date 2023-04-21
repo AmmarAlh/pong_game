@@ -66,6 +66,10 @@ custom_executable(game_controller SOURCES
   src/collision_detection.cpp
 )
 
+custom_executable(fft SOURCES
+  src/fft_node.cpp
+)
+
 
 
 
